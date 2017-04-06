@@ -8,9 +8,8 @@ ln -s /vagrant /home/vagrant/.wine/drive_c/vagrant
 echo " Xvfb :0 -screen 0 1024x768x16 &" >> /etc/rc.local
 
 # Install Tibbo tools
-wget http://dev.dms-serwis.com.pl/misc/tide-tibbo-lite-5.1.3-win32.zip -O /tmp/tibbo.zip
 mkdir "/home/vagrant/.wine/drive_c/Program Files/Tibbo"
-unzip /tmp/tibbo.zip -d  "/home/vagrant/.wine/drive_c/Program Files/Tibbo"
+unzip /vagrant/tide-tibbo-lite-5.1.3-win32.zip -d  "/home/vagrant/.wine/drive_c/Program Files/Tibbo"
 
 # WINE extensions
 export DISPLAY=:0.0
