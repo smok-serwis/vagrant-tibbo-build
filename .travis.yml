@@ -13,6 +13,3 @@ build_pojeb:
     - wine start.exe
     - ln -s . ~/.wine/drive_c/env
     - cd ~/.wine/drive_c/users; wget http://tibbo.com/downloads/open/tide/tide-5-03-04.exe; export DISPLAY=:0.0; wine tide-5-03-04.exe /S &
-  artifacts:
-    paths:
-      - "*.jeb"
