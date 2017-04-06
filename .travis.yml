@@ -1,4 +1,13 @@
 sudo: required
+build_pojeb:
+  script:
+    - wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
+    - mkdir vagrant-tibbo-build
+    - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh vagrant-tibbo-build/pojeb
+    - zajeb vagrant-tibbo-build
+  artifacts:
+    paths:
+      - vagrant-tibbo-build.jeb
 test_itself:
   script:
     - sudo dpkg --add-architecture i386

@@ -5,4 +5,4 @@ How to use:
 2. `./build.sh nameoftprfile.tpr`
 
 
-TIDE is (c) [Tibbo Technology Inc.](http://tibbo.com/)
+[TIDE](/redist/tide-tibbo-lite-5.1.3-win32.zip) is (c) [Tibbo Technology Inc.](http://tibbo.com/)
