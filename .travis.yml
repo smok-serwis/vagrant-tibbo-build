@@ -1,5 +1,6 @@
 sudo: required
 build_pojeb:
+  install: wget xvfb wine winetricks unzip
   script:
     - wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
     - mkdir vagrant-tibbo-build

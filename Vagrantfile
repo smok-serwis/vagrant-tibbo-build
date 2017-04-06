@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     # Install WINE
     dpkg --add-architecture i386
     apt-get update
-    apt-get install -y wget xvfb wine winetricks unzip
+    apt-get install -y
 
     # Load framebuffer
     sudo -u vagrant Xvfb :0 -screen 0 1024x768x16 &
