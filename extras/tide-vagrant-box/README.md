@@ -1,0 +1,1 @@
+# Recipe for a box with TIDE```bashvagrant upvagrant export --out tide.boxvagrant destroy -f```Enjoy!
