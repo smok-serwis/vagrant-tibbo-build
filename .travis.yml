@@ -1,12 +1,18 @@
 sudo: required
 build_pojeb:
-  install: wget xvfb wine winetricks unzip
+  before_install:
+    - sudo dpkg --add-architecture i386
+  install:
+    - wget
+    - xvfb
+    - wine
+    - winetricks
+    - unzip
   script:
     - wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
     - mkdir vagrant-tibbo-build
     - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh vagrant-tibbo-build
     - zajeb vagrant-tibbo-build
-    - sudo dpkg --add-architecture i386
     - sudo apt-get update
     - sudo apt-get install -y wget xvfb wine winetricks
     - Xvfb :0 -screen 0 1024x768x16 &
