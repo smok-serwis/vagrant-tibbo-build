@@ -3,13 +3,8 @@ build_pojeb:
   script:
     - wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
     - mkdir vagrant-tibbo-build
-    - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh vagrant-tibbo-build/pojeb
+    - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh vagrant-tibbo-build
     - zajeb vagrant-tibbo-build
-  artifacts:
-    paths:
-      - vagrant-tibbo-build.jeb
-test_itself:
-  script:
     - sudo dpkg --add-architecture i386
     - sudo apt-get update
     - sudo apt-get install -y wget xvfb wine winetricks
@@ -17,3 +12,6 @@ test_itself:
     - wine start.exe
     - ln -s . ~/.wine/drive_c/env
     - cd ~/.wine/drive_c/users; wget http://tibbo.com/downloads/open/tide/tide-5-03-04.exe; export DISPLAY=:0.0; wine tide-5-03-04.exe /S &
+  artifacts:
+    paths:
+      - "*.jeb"
