@@ -1,0 +1,15 @@
+{
+    "description": "Tibbo IDE 5.3.1",
+    "short_description": "Tibbo IDE 5.3.1",
+    "name": "smok-serwis/tide",
+    "versions": [{
+        "version": "1.0",
+        "status": "active",
+        "description_html": "",
+        "description_markdown": "",
+        "providers": [{
+            "name": "virtualbox",
+            "url": "about:blank"
+        }]
+    }]
+}

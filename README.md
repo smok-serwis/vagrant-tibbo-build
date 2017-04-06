@@ -14,7 +14,7 @@
 # Make a Vagrant box with TIDE
 ```bash
 vagrant up
-vagrant export --out tide.box
+vagrant package --out tide.box
 vagrant destroy -f
 ```
 
