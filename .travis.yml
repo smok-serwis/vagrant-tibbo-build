@@ -12,6 +12,6 @@ build_pojeb:
   script:
     - wget -O - https://github.com/smok-serwis/pojeb/raw/master/jebac-to | sudo bash
     - mkdir vagrant-tibbo-build
-    - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh misc/install.sh vagrant-tibbo-build
+    - cp Vagrantfile tibbo_build.sh pojeb.sh install.sh vagrant-tibbo-build
     - zajeb vagrant-tibbo-build
     - dojeb vagrant-tibbo-build.jeb

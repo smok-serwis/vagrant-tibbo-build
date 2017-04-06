@@ -21,7 +21,7 @@ sudo -u $1 mkdir "/home/$1/.wine/drive_c/Program Files/Tibbo"
 sudo -u $1 unzip /$1/redist/tide-tibbo-lite-5.1.3-win32.zip -d  "/home/$1/.wine/drive_c/Program Files/Tibbo"
 
 # WINE extensions
-sudo -u $1 "export DISPLAY=:0.0; winetricks corefonts vcrun6"
+sudo -u $1 "env DISPLAY=:0.0; winetricks corefonts vcrun6"
 
 mv misc/tibbo_build.sh /usr/sbin/tibbo_build
 chmod ugo+rx /usr/sbin/tibbo_build
