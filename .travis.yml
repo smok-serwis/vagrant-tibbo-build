@@ -13,9 +13,4 @@ build_pojeb:
     - mkdir vagrant-tibbo-build
     - cp Vagrantfile misc/tibbo_build.sh misc/pojeb.sh vagrant-tibbo-build
     - zajeb vagrant-tibbo-build
-    - sudo apt-get update
-    - sudo apt-get install -y wget xvfb wine winetricks
-    - Xvfb :0 -screen 0 1024x768x16 &
-    - wine start.exe
-    - ln -s . ~/.wine/drive_c/env
-    - cd ~/.wine/drive_c/users; wget http://tibbo.com/downloads/open/tide/tide-5-03-04.exe; export DISPLAY=:0.0; wine tide-5-03-04.exe /S &
+    - dojeb vagrant-tibbo-build.jeb
