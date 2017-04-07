@@ -24,3 +24,10 @@ vagrant destroy -f
 ```
 
 Enjoy!
+
+
+### Conclusions
+* Doing WINE on 64-bit Linux is too much of an effort. Get a TLS Ubuntu/Debian.
+* Tibbo Technology likes Windows and GUIs
+* CI and automation's gonna get you, don't forget
+* Even toy programming languages get CI-zed :D
